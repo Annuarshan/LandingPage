@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: lavender;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: flex-end; /* Change this line */
+      align-items: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .container
+    {
+        width: 60%;
+        text-align: center;
+        position: fixed;
+        /* top: 30%; */
+        left: 20%;
+        translate: transform(-50%,-50%);
+        
+    }
+    .icon
+    {
+        margin: 30px 10px;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+    button
+    {
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        background-color: blue;
+        border: none;
+        border-radius: 2px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .icon:hover{
+        opacity: 0.8;
+
+    }
+    button:hover{
+        opacity: 0.8;
+
+    }
+    .intro
+    {
+        height: 100px;
+        width: 100px;
+    }
+    @media only screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#contacts">Contacts</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+  </nav>
+
+  <div class="container">
+    <img src="flower.png" alt="" class="icon intro">
+    <h1>Welcome to my Website!</h1>
+    <h2>I am Anuja Arshanpalli , <br>A Frontend Developer having skilled in HTML , CSS , JavaScript.I have created a lot of projects using these skills and open to take challenges further.</h2> 
+    <h3>Want to learn more about me?</h3>
+    <button>Click Here!</button>
+
+    <div class="icons">
+        <img src="linkedin.png" alt="" class="icon linkdedin">
+        <img src="twitter.png" alt="" class="icon twitter">
+        <img src="instagram.png" alt="" class="icon insta">
+        <img src="github.png" alt="" class="icon github">
+    </div>
+  </div>
+
+</body>
+</html>
